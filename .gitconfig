@@ -1,0 +1,7 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Gert-Jan Meire
+	email = gertjan.meire@gmail.com
+[core]
+	excludesfile = /Users/gertjanmeire/.gitignore_global

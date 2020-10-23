@@ -1,0 +1,39 @@
+{
+	"analytics-uuid": "e1a2de07-f31a-443d-a20f-a85330a7bb92",
+	"motd": {
+		"minVersion": "3.0.5"
+	},
+	"motd.fetched": 1583919487918,
+	"usage": true,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "103190067087284974033",
+		"email": "gertjan.meire@gmail.com",
+		"email_verified": true,
+		"at_hash": "nxLW-B7Ig19EAXN1bGFofQ",
+		"iat": 1583337113,
+		"exp": 1583340713
+	},
+	"tokens": {
+		"expires_at": 1583935986008,
+		"refresh_token": "1//09RMzq_zF8QUgCgYIARAAGAkSNwF-L9IrypNh7GmSYeDy3h-xhIhyJ4wpyfCvcBI8JBcXpUNLdv6o7owZeqfArf6nQPb1AkV0CFI",
+		"scopes": [
+			"email",
+			"https://www.googleapis.com/auth/cloud-platform",
+			"https://www.googleapis.com/auth/cloudplatformprojects.readonly",
+			"https://www.googleapis.com/auth/firebase",
+			"openid"
+		],
+		"access_token": "ya29.a0Adw1xeV3n9bxy2Hqh9ePL3pfdK2uoKzaZj7e6Cb6VVSvvgzlEsTgNUgFTlxZ57PyI3HQO6Sr9yc3h_xo_h4_u-mHoPM005EE6cF8xCoZaCYqHYI-hps6ueSncclBe5CssUVqDO4Xtkh4kLzL2hrHPcsXtkLYCyX0-pAN1UJfXGmY",
+		"expires_in": 3599,
+		"scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly openid https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImNiNDA0MzgzODQ0YjQ2MzEyNzY5YmI5MjllY2VjNTdkMGFkOGUzYmIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAzMTkwMDY3MDg3Mjg0OTc0MDMzIiwiZW1haWwiOiJnZXJ0amFuLm1laXJlQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoib19UX0hHeElJWmlSS1VjcjdySzU2USIsImlhdCI6MTU4MzkzMjM4NiwiZXhwIjoxNTgzOTM1OTg2fQ.I6Yy_G9ZBOJdf-OgODav--ZpWiMm7bf41ruQfNmQpZNEZ-x9CBvSSqXAxfpCzJVvUxhH1uqC2Q8oQXeEw_KNcLcX0VswqtbM9FIU8WPITNo2VGX2hQXSmWs8QgI3vdztun021E1jwntZQU4t3ykQkVEx4NaJWvxLjJByMQ421_JBuH8KlMJYFMoIVfor1ZmmG_FXYq9OvLt97mTA5LX42_nn_L8U0zF3eQ6XTtUQq1dh15x-OLztiuCkHwDTcFpB_baggZiAphd98H7bj-RlWqTyXpX5C6AWYHwWqBO767h2Id6XaTk9ZzY31ff_oFq_m_sbuz4fcqCed0Z8ahtZqg"
+	},
+	"activeProjects": {
+		"/Users/gertjanmeire/Sites/Personal/golden-ticket": "deploy",
+		"/Users/gertjanmeire/Sites/Personal/golden-ticket/firebase-deploy": "golden-ticket-react"
+	}
+}

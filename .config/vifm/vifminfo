@@ -1,0 +1,130 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/Users/gertjanmeire/
+	..
+1581666833
+'b
+	/Users/gertjanmeire/bin/
+	..
+1581666833
+'h
+	/Users/gertjanmeire/
+	..
+1581666833
+'z
+	/Users/gertjanmeire/.config/vifm
+	..
+1581666833
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/Users/gertjanmeire
+	Sites
+11
+d/Users/gertjanmeire/Sites
+	Pau
+1
+d/Users/gertjanmeire/Sites/Pau
+	Training
+1
+d/Users/gertjanmeire/Sites/Pau/Training
+	React
+1
+d/Users/gertjanmeire/Sites/Pau/Training/React
+	react-redux-app
+1
+d/Users/gertjanmeire/Sites/Pau/Training/React/react-redux-app
+	..
+0
+d/Users/gertjanmeire/Sites/Pau/Training/React
+	testapp
+2
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp
+	react-api
+2
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp/react-api
+	package.json
+6
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp/react-api/src
+	..
+0
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp/react-api
+	..
+0
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp
+	..
+0
+d/Users/gertjanmeire/Sites/Pau/Training/React
+	testapp
+2
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp/react-api
+	src
+3
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp/react-api/src
+	..
+0
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp/react-api
+	src
+3
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp/react-api/src
+	..
+0
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp/react-api
+	..
+0
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp
+	react-api
+2
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp/react-api
+	..
+0
+d/Users/gertjanmeire/Sites/Pau/Training/React/testapp
+	react-api
+2
+d
+
+# Right window history (oldest to newest):
+D/Users/gertjanmeire
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:cd src/
+:cd testapp/react-api/
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0

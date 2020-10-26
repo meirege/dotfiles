@@ -1,10 +1,10 @@
+refresh
+pasteFile
+copyFile
 toggleHidden
 addFile
 rename
-pasteFile
-copyFile
 addDirectory
 delete
-refresh
 normal:zz
 cd

@@ -318,14 +318,16 @@ function! floaterm#window#hide_floaterm(bufnr) abort
     if exists('*win_gettype')
       if win_gettype() == 'popup'
         call popup_close(winid)
-      else
-        execute a:bufnr . 'hide'
+      elseif bufwinnr(a:bufnr) > 0
+        silent! execute bufwinnr(a:bufnr) . 'hide'
       endif
     else
-      try      " there should be a function like `win_type()`
+      try
         call popup_close(winid)
       catch
-        execute a:bufnr . 'hide'
+        if bufwinnr(a:bufnr) > 0
+          silent! execute bufwinnr(a:bufnr) . 'hide'
+        endif
       endtry
     endif
   endif

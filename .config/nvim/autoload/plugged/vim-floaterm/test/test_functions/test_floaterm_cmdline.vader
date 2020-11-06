@@ -2,8 +2,7 @@
 
 Execute(Test floaterm#cmdline#parse):
   let argstr ='--height=0.6 --width=0.4 --wintype=floating --name=floaterm1 --position=topleft --autoclose=2 ranger --cmd="cd ~"'
-  let arglist = split(argstr)
-  let [cmd, opts] = floaterm#cmdline#parse(arglist)
+  let [cmd, opts] = floaterm#cmdline#parse(split(argstr))
   AssertEqual 'ranger --cmd="cd ~"', cmd
   AssertEqual {
     \'wintype': 'floating',
@@ -13,6 +12,39 @@ Execute(Test floaterm#cmdline#parse):
     \'height': 0.6,
     \'position': 'topleft'
     \}, opts
+
+Execute(Test floaterm#cmdline#parse expand feature):
+  silent !touch test.txt && echo first.line > test.txt
+  edit ./test.txt
+  normal! gg0
+
+  if $USER == 'runner'
+    AssertEqual './test.txt', floaterm#cmdline#parse(split('%'))[0]
+  else
+    AssertEqual 'test.txt', floaterm#cmdline#parse(split('%'))[0]
+  endif
+  AssertEqual 'txt', floaterm#cmdline#parse(split('%:p:e'))[0]
+  AssertEqual '\%', floaterm#cmdline#parse(split('\%'))[0]
+  AssertEqual '\%:p:e', floaterm#cmdline#parse(split('\%:p:e'))[0]
+  if $USER == 'runner'
+    AssertEqual 'x./test.txtx', floaterm#cmdline#parse(split('x%x'))[0]
+  else
+    AssertEqual 'xtest.txtx', floaterm#cmdline#parse(split('x%x'))[0]
+  endif
+  AssertEqual 'xtxtx', floaterm#cmdline#parse(split('x%:p:ex'))[0]
+  AssertEqual 'x\%x', floaterm#cmdline#parse(split('x\%x'))[0]
+  AssertEqual 'x\%:p:ex', floaterm#cmdline#parse(split('x\%:p:ex'))[0]
+
+  AssertEqual 'first.line', floaterm#cmdline#parse(split('<cfile>'))[0]
+  AssertEqual 'line', floaterm#cmdline#parse(split('<cfile>:p:e'))[0]
+  AssertEqual '\<cfile>', floaterm#cmdline#parse(split('\<cfile>'))[0]
+  AssertEqual '\<cfile>:p:e', floaterm#cmdline#parse(split('\<cfile>:p:e'))[0]
+  AssertEqual 'xfirst.linex', floaterm#cmdline#parse(split('x<cfile>x'))[0]
+  AssertEqual 'xlinex', floaterm#cmdline#parse(split('x<cfile>:p:ex'))[0]
+  AssertEqual 'x\<cfile>x', floaterm#cmdline#parse(split('x\<cfile>x'))[0]
+  AssertEqual 'x\<cfile>:p:ex', floaterm#cmdline#parse(split('x\<cfile>:p:ex'))[0]
+
+  silent !rm test.txt
 
 Execute(Test floaterm#cmdline#complete):
   AssertEqual [

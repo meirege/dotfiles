@@ -53,6 +53,10 @@ set list listchars=tab:»·,trail:·,nbsp:·          " Display extra whitespace
 set keywordprg=":help"                            " With this when pressing Ctrl + K vim searches for the documentation of the word under the cursor in the vim docs instead of a man page entry.
 set encoding=utf8
 
+set synmaxcol=128
+syntax sync minlines=256
+
+
 let g:python2_host_prog = '/usr/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 

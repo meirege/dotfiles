@@ -1,13 +1,6 @@
 # opens iTerm2
 alt - return : "${HOME}"/.dotfiles/scripts/utils/open_iterm2
 
-# Show system statistics
-fn + lalt - 1 : "${HOME}"/.dotfiles/scripts/info/show_cpu
-fn + lalt - 2 : "${HOME}"/.dotfiles/scripts/info/show_mem
-fn + lalt - 3 : "${HOME}"/.dotfiles/scripts/info/show_bat
-fn + lalt - 4 : "${HOME}"/.dotfiles/scripts/info/show_disk
-fn + lalt - 5 : "${HOME}"/.dotfiles/scripts/info/show_song
-
 # Navigation
 alt - h : yabai -m window --focus west
 alt - j : yabai -m window --focus south
@@ -47,12 +40,6 @@ alt - 8 :yabai -m query --spaces --space 8 | jq -r '.windows[0] // empty' | xarg
 fn - 1  : yabai -m display --focus 1
 fn - 2  : yabai -m display --focus 2
 fn - 3  : yabai -m display --focus 3
-
-
-# send window to monitor and follow focus
-fn + cmd - 1  : yabai -m window --display 1; yabai -m display --focus 1
-fn + cmd - 2  : yabai -m window --display 2; yabai -m display --focus 2
-fn + cmd - 3  : yabai -m window --display 3; yabai -m display --focus 3
 
 # Resize windows
 lctrl + alt - h : yabai -m window --resize left:-50:0 ; \

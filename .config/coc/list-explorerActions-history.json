@@ -5,7 +5,6 @@
     "hidden",
     "change",
     "toggleh",
-    "refresh",
     "newfile",
     "deletefi",
     "delete",
@@ -14,13 +13,16 @@
     "newfil",
     "copy",
     "paste",
-    "refres"
+    "refres",
+    "refresh"
   ],
   "L1VzZXJzL2dlcnRqYW5tZWlyZS9TaXRlcy9QYXUvUHJvamVjdHMvZG9ja2V0LmxvY2FsL3NlcnZpY2VzL3BwdC1hcHAvc3JjL2NvbXBvbmVudHMvRWRpdGFibGVSYWRpb0dyb3VwV2l0aE5lc3RlZENoZWNrYm94ZXM=": [
     "copy",
     "paste"
   ],
   "L1VzZXJzL2dlcnRqYW5tZWlyZQ==": [
-    "togglehi"
+    "shi",
+    "togglehi",
+    "hidd"
   ]
 }

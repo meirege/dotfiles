@@ -85,6 +85,7 @@ POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="black"
 plugins=(
 git
 zsh-autosuggestions
+dotbare
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -228,8 +229,26 @@ function cd() {
     done
 }
 
+# fd - cd to selected directory
+fd() {
+  local dir
+  dir=$(find ${1:-.} -path '*/\.*' -prune \
+                  -o -type d -print 2> /dev/null | fzf +m) &&
+  cd "$dir"
+}
+
+# fda - including hidden directories
+fda() {
+  local dir
+  dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
+}
+
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Make dotfiles bare repo config alias. 
 # See: https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=/Users/gertjanmeire/.dotfiles/ --work-tree=/Users/gertjanmeire'
+# alias config=dotbare
+# export DOTBARE_DIR="$HOME/.dotfiles"
+# export DOTBARE_TREE="$HOME"

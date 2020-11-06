@@ -2,7 +2,7 @@
 " Normal mode key mappings
 "
 nnoremap <leader><space> :noh<cr>                 " Clear search result highlighting
-nnoremap <leader>ev :vsp $MYVIMRC<CR>             " type,evto edit the Vimrc
+nnoremap <leader>ev :,sp $MYVIMRC<CR>             " type,evto edit the Vimrc
 nnoremap <leader><leader> <c-^>                   " Switch between the last two files
 nnoremap <space> za                               " Space toggle fold
 nnoremap <C-o> zA                                 " Toggle folds and their children
@@ -35,3 +35,8 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <silent> <c-left> :vertical resize -1<CR>
 nnoremap <silent> <c-right> :vertical resize +1<CR>
+
+" EasyMotion
+map <Leader>w <Plug>(easymotion-prefix)
+map  <Leader> <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)

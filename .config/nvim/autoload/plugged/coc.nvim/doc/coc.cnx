@@ -31,7 +31,6 @@
     服务列表 				   |coc-list-services|
     命令列表 				   |coc-list-commands|
     链接列表 				   |coc-list-links|
-    输出列表 				   |coc-list-output|
     补全源列表 				   |coc-list-completion-sources|
     已安装列表 				   |coc-list-lists|
 状态栏支持   		   		|coc-status|
@@ -74,7 +73,7 @@ NodeJS https://nodejs.org/ >= 10.12.0
 
 推荐使用 https://github.com/junegunn/vim-plug 添加
 >
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'neoclide/coc.nvim'
 
 到 `init.vim` 然后执行: >
 
@@ -666,26 +665,6 @@ coc#util#rebuild()
 
 	对插件执行 `npm rebuild` 命令。
 
-						*coc#util#has_float()*
-
-coc#util#has_float()
-
-	检测是否存在浮动窗口。
-
-						*coc#util#float_scrollable()*
-
-coc#util#float_scrollable()
-
-	检测是否存在可滚动的浮动窗口。
-
-						*coc#util#float_scroll()*
-coc#util#float_scroll({forward})
-
-	用于创建滚动浮动窗口的映射，例如： >
-
-	nnoremap <expr><C-f> coc#util#has_float() ? coc#util#float_scroll(1) : "\<C-f>"
-	nnoremap <expr><C-b> coc#util#has_float() ? coc#util#float_scroll(0) : "\<C-b>"
-<
 						*CocRequest()*
 CocRequest({id}, {method}, [{params}])
 
@@ -715,8 +694,9 @@ CocNotify({id}, {params})
 	向指定 language server 发送通知。
 >
 	call CocNotify('ccls', '$ccls/reload')
-
+<
 						*CocLocations()*
+
 CocLocations({id}, {method}, [{params}, {openCommand}])
 
 	从指定 language server 获取地址列表。例如：
@@ -808,7 +788,7 @@ CocActionAsync({action}, [...{args}, [{callback}]])
 
 	行为与 "jumpDefinition" 相同。
 
-"doHover" 					*coc-action-doHover*
+"doHover" [{hoverTarget}] 					*coc-action-doHover*
 
 	显示当前位置的悬浮信息。
 

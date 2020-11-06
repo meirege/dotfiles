@@ -787,6 +787,12 @@ vim-gutentags <https://github.com/ludovicchabant/vim-gutentags>
 * enable/disable vim-gutentags integration >
   let g:airline#extensions#gutentags#enabled = 1
 
+-------------------------------------                     *gen_tags.vim*
+gen_tags.vim <https://github.com/jsfaint/gen_tags.vim>
+
+* enable/disable gen_tags.vim integration >
+  let g:airline#extensions#gen_tags#enabled = 1
+
 -------------------------------------                        *airline-hunks*
 vim-gitgutter <https://github.com/airblade/vim-gitgutter>
 vim-signify <https://github.com/mhinz/vim-signify>
@@ -820,6 +826,15 @@ This extension displays the current 'keymap' in use.
 * enable/disable vim-keymap extension >
   let g:airline#extensions#keymap#enabled = 1
 
+* set label for a keymap (default is from g:airline_symbols.keymap) >
+  let g:airline#extensions#keymap#label = 'Layout:'
+
+* set name for default lauout (empty to disable it completely) >
+  let g:airline#extensions#keymap#default = ''
+
+* set short codes for layout names >
+  let g:airline#extensions#keymap#short_codes = {'russian-jcukenwin': 'ru'}
+
 -------------------------------------                *airline-languageclient*
 LanguageClient <https://github.com/autozimu/LanguageClient-neovim>
 (despite its name, it can be used for Vim and Neovim).
@@ -848,9 +863,10 @@ localsearch <https://github.com/mox-mox/vim-localsearch>
 * enable/disable localsearch indicator integration >
   let g:airline#extensions#localsearch#enabled = 1
 
-* show only when localsearch is off (shows 'GS' denoting GlobalSearch)
-  (this option is set to 0 by default) >
-  let g:airline#extensions#localsearch#enabled = 1
+* invert the localsearch indicator
+  if set to 1, the indicator shall only be shown when localsearch is disabled
+  the text will also change from 'LS' to 'GS' (Global Search) >
+  let g:airline#extensions#localsearch#inverted = 0
 
 -------------------------------------                    *airline-lsp*
 lsp <https://github.com/prabirshrestha/vim-lsp>
@@ -1514,7 +1530,7 @@ vim-windowswap <https://github.com/wesQ3/vim-windowswap>
   " The default value matches filetypes typically used for documentation
   " such as markdown and help files. Default is:
   let g:airline#extensions#wordcount#filetypes =
-    \ ['asciidoc', 'help', 'mail', 'markdown', 'org', 'plaintex', 'rst', 'tex', 'text'])
+    \ ['asciidoc', 'help', 'mail', 'markdown', 'nroff', 'org', 'plaintex', 'rst', 'tex', 'text'])
   " Use ['all'] to enable for all filetypes.
 
 * defines the name of a formatter for word count will be displayed: >
